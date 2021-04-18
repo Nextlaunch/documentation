@@ -70,6 +70,7 @@ Want to try the API out without writing code?
 </details>
 
 <details>
+<br>
 <summary>
 Sample
 </summary>
