@@ -14,11 +14,15 @@ Want to try the API out without writing code?
 ### Basic Structures
 
 <details>
-<summary>Temporary Flight Restriction (TFR)</summary>
+<summary>
+Temporary Flight Restriction (TFR)
+</summary>
 <br>
 <details open>
 
-<summary>Schema</summary>
+<summary>
+Schema
+</summary>
 
 <br>
 
@@ -67,7 +71,9 @@ Want to try the API out without writing code?
 </details>
 
 <details>
-<summary>Sample</summary>
+<summary>
+Sample
+</summary>
 <br>
 
 ```json
