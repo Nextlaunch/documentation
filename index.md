@@ -14,14 +14,13 @@ Want to try the API out without writing code?
 ### Basic Structures
 
 <details>
-<summary>
-Temporary Flight Restriction (TFR)
+<summary>Temporary Flight Restriction (TFR)
 </summary>
+
 <br>
 <details open>
 
-<summary>
-Schema
+<summary>Schema
 </summary>
 
 <br>
