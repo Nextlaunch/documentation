@@ -3,7 +3,7 @@
 Welcome to the Nextlaunch documentation. The pages here will guide you through the basics of using our API for your own
 projects.
 
-### Before you start
+## Before you start
 
 Nextlaunch is a passion project. As such this documentation may stray from the actual behaviour of the API.
 
@@ -11,10 +11,10 @@ Want to try the API out without writing code?
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/a79e7d16088a2d207213)
 
-### Basic Structures
+## Basic Structures
 
 <details>
-<summary>Temporary Flight Restriction (TFR)
+<summary>### Temporary Flight Restriction (TFR)
 </summary>
 
 <br>
@@ -24,8 +24,6 @@ Want to try the API out without writing code?
 </summary>
 
 <br>
-
-### Temporary Flight Restriction
 
 |Field|Type|Description|
 |:---:|:---:|:---:|
