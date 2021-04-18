@@ -20,33 +20,48 @@ Want to try the API out without writing code?
 <summary>Schema</summary>
 <br>
 
+### Temporary Flight Restriction
+
 |Field|Type|Description|
 |:---:|:---:|:---:|
-|Id|UUID(v4)/String|The ID of the TFR|
-|Name|String|The identifier provided by the source|
-|Location|String|The location of affected by the TFR|
-|Revision|Number|The number of times this TFR has been revised|
-|Added|Timestamp|The time this TFR revision was added to the database (UTC/Zulu)|
-|Start|Timestamp|The time this TFR is scheduled to begin (UTC/Zulu)|
-|End|Timestamp|The time this TFR is scheduled to end (UTC/Zulu)
-|Last Detected|Timestamp|The last time this TFR was detected by the system (UTC/Zulu)|
-|Status.Withdrawal.Withdrawn|Boolean|If the TFR has been withdrawn|
-|Status.Withdrawal.Time|Timestamp/Null|The time the TFR was withdrawn (For a more reliable source, use TFR.LastDetected|
-|Status.Expired|Boolean|If the TFR has expired|
-|Status.Effective|Boolean|If the TFR is considered "in effect" (current time is between start and end, and the TFR has not been withdrawn)|
-|Description|String|A brief description of the TFR|
-|Text|String|The raw text of the TFR|
-|AltitudesAffected.Upper.Height|Number|The value of the upper limit|
-|AltitudesAffected.Upper.Unit|String|The units that `AltitudesAffected.Upper.Height` is measured in|
-|AltitudesAffected.Upper.Inclusive|Boolean|Whether the value of `AltitudesAffected.Upper.Height` is inclusive, or not|
-|AltitudesAffected.Upper.Trusted|Boolean|Whether or not Nextlaunch can trust the data provided in this upper limit|
-|AltitudesAffected.Lower.Height|Number|The value of the lower limit|
-|AltitudesAffected.Lower.Unit|String|The units that `AltitudesAffected.Lower.Height` is measured in|
-|AltitudesAffected.Lower.Inclusive|Boolean|Whether the value of `AltitudesAffected.Lower.Height` is inclusive, or not|
-|AltitudesAffected.Lower.Trusted|Boolean|Whether or not Nextlaunch can trust the data provided in this lower limit|
-|AltitudesAffected.Message|String|This altitude pairing expressed in a human readable format|
-|Links.Map|String|A URL to an image of the areas this TFR affects (Provided by the FAA)|
-|Links.Source|String|A URL to this TFR's source page|
+|id|UUID(v4)/String|The ID of the TFR|
+|name|String|The identifier provided by the source|
+|location|String|The location of affected by the TFR|
+|revision|Number|The number of times this TFR has been revised|
+|added|Timestamp|The time this TFR revision was added to the database (UTC/Zulu)|
+|start|Timestamp|The time this TFR is scheduled to begin (UTC/Zulu)|
+|end|Timestamp|The time this TFR is scheduled to end (UTC/Zulu)
+|last Detected|Timestamp|The last time this TFR was detected by the system (UTC/Zulu)|
+|status|[Status](#tfr-status)|Status information about the TFR
+|description|String|A brief description of the TFR|
+|text|String|The raw text of the TFR|
+|altitudesAffected|[Altitudes](#tfr-altitudes)|Altitude information for the TFR
+|links.map|String|A URL to an image of the areas this TFR affects (Provided by the FAA)|
+|links.source|String|A URL to this TFR's source page|
+
+### Status {#tfr-status}
+
+|Field|Type|Description|
+|:---:|:---:|:---:|
+|withdrawal.withdrawn|Boolean|If the TFR has been withdrawn|
+|withdrawal.time|Timestamp/Null|The time the TFR was withdrawn (For a more reliable source, use `TFR.lastDetected`|
+|expired|Boolean|If the TFR has expired|
+|effective|Boolean|If the TFR is considered "in effect" (current time is between start and end, and the TFR has not been withdrawn)|
+
+### Altitudes {#tfr-altitudes}
+
+|Field|Type|Description|
+|:---:|:---:|:---:|
+|upper.height|Number|The value of the upper limit|
+|upper.unit|String|The units that `upper.height` is measured in|
+|upper.inclusive|Boolean|Whether the value of `upper.height` is inclusive, or not|
+|upper.trusted|Boolean|Whether or not Nextlaunch can trust the data provided in this upper limit|
+|lower.height|Number|The value of the lower limit|
+|lower.unit|String|The units that `lower.height` is measured in|
+|lower.inclusive|Boolean|Whether the value of `lower.height` is inclusive, or not|
+|lower.trusted|Boolean|Whether or not Nextlaunch can trust the data provided in this lower limit|
+|Message|String|This altitude pairing expressed in a human readable format|
+
 </details>
 
 <details>
