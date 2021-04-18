@@ -69,9 +69,10 @@ Want to try the API out without writing code?
 |trusted|Boolean|Whether or not Nextlaunch can trust the data provided in this limit|
 
 </details>
-
-<details>
 <br>
+<br>
+<details>
+
 <summary>
 Sample
 </summary>
