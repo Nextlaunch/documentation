@@ -1,6 +1,7 @@
 # TFR Documentation
 
 ## Endpoints
+
 |Path|Summary|
 |:---:|:---:|
 |[`/`](#root)|Provides a paginated list allowing access to all of the stored TFRs in the system|
