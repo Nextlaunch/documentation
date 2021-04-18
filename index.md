@@ -118,8 +118,125 @@ Sample
         "source": "https://tfr.faa.gov/save_pages/detail_1_4530.html"
     }
 }
-
 ```
 
 </details>
 </details>
+
+<details>
+<summary>### Notice to Airmen (NOTAM)
+</summary>
+
+<br>
+<details open>
+
+<summary>Schema
+</summary>
+
+<br>
+
+|Field|Type|Description|
+|:---:|:---:|:---:|
+|id|String|The id of the NOTAM|
+|keywords|Array<String>|The keywords which this NOTAM matched|
+|name|String|The identifier provided by the source|
+|revision|String|The number of times this NOTAM has been revised|
+|added|Timestamp|The time this NOTAM revision was added to the database (UTC/Zulu)
+|start|Timestamp|The time this NOTAM is scheduled to begin (UTC/Zulu)|
+|end|Timestamp|The time this NOTAM is scheduled to end (UTC/Zulu)|
+|status|[Status](#notam-status)|Status information about the NOTAM|
+|report|String|The report content of the NOTAM|
+|raw|String|The full raw text of the NOTAM|
+|coordinates|Array<[Coordinate](#notam-coordinate)>|An array of coordinates which (__may__) have been extracted from the NOTAM|
+
+
+### Status {#notam-status}
+
+|Field|Type|Description|
+|:---:|:---:|:---:|
+|withdrawal.withdrawn|Boolean|If the TFR has been withdrawn|
+|withdrawal.time|Timestamp/Null|The time the TFR was withdrawn (For a more reliable source, use `TFR.lastDetected`|
+|expired|Boolean|If the TFR has expired|
+|effective|Boolean|If the TFR is considered "in effect" (current time is between start and end, and the TFR has not been withdrawn)|
+
+### Coordinate {#notam-coordinate}
+|Field|Type|Description|
+|:---:|:---:|:---:|
+|lat.value|Number|The latitude component of the coordinate|
+|lon.value|Number|The longitude component of the coordinate|
+
+
+</details>
+<br>
+<br>
+<details>
+
+<summary>
+Sample
+</summary>
+<br>
+
+```json
+{
+    "id": "a5f884e0-42c2-4e03-977f-523222d29ffe",
+    "keywords": [
+        "ROCKET LAUNCH"
+    ],
+    "name": "1/6176",
+    "revision": 0,
+    "added": "2021-04-07T14:53:35.700Z",
+    "start": "2021-04-10T16:00:00.000Z",
+    "end": "2021-04-10T20:00:00.000Z",
+    "status": {
+        "withdrawal": {
+            "withdrawn": false,
+            "time": null
+        },
+        "expired": true,
+        "effective": false
+    },
+    "report": "ID..AIRSPACE 20NM S OF BOISE, ID..TEMPORARY FLIGHT RESTRICTIONS ARE IN EFFECT WI AREA DEFINED AS 1.7NM RADIUS OF 431415N1161927W (BOI180020) SFC-FL435 TO PROVIDE A SAFE ENVIRONMENT FOR ROCKET LAUNCH ACT. PURSUANT TO 14 CFR SECTION 91.143. ZLC OPS, TEL 801-320-2560 IS IN CHARGE OF THE OPS. SALT LAKE CITY /ZLC/ ARTCC TEL 801-320-2560, IS THE FAA CDN FACILITY. 10 APR 16:00 2021 UNTIL 10 APR 20:00 2021. CREATED: 07 APR 14:51 2021",
+    "raw": "!FDC 1/6176 ZLC ID..AIRSPACE 20NM S OF BOISE, ID..TEMPORARY FLIGHT\nRESTRICTIONS ARE IN EFFECT WI AREA DEFINED AS 1.7NM RADIUS OF\n431415N1161927W (BOI180020) SFC-FL435 TO PROVIDE A SAFE\nENVIRONMENT FOR ROCKET LAUNCH ACT. PURSUANT TO 14 CFR SECTION\n91.143. ZLC OPS, TEL 801-320-2560 IS IN CHARGE OF THE\nOPS. SALT LAKE CITY /ZLC/ ARTCC TEL 801-320-2560, IS THE\nFAA CDN FACILITY.  \n2104101600-2104102000\n",
+    "coordinates": [
+        {
+            "lat": {
+                "value": -94.694722
+            },
+            "lon": {
+                "value": 44.103333
+            }
+        },
+        {
+            "lat": {
+                "value": -106.694722
+            },
+            "lon": {
+                "value": 56.103333
+            }
+        },
+        {
+            "lat": {
+                "value": -118.694722
+            },
+            "lon": {
+                "value": 44.103333
+            }
+        },
+        {
+            "lat": {
+                "value": -106.694722
+            },
+            "lon": {
+                "value": 32.103333
+            }
+        }
+    ]
+}
+```
+
+</details>
+</details>
+
+### Endpoints
+- [/notam](endpoints/notam) - various endpoints dealing with NOTAMs
+- [/tfr](endpoints/tfr) - various endpoints dealing with TFRs
