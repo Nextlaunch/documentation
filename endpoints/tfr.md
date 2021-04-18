@@ -24,9 +24,11 @@ The root path of this endpoint provides access to a paginated list of all TFRs c
 |offset|offset=20|The number of entries to skip before returning data|
 
 #### Sample URL
-```http request
+
+```
 https://nextlaunch.org/api/0.0.1/tfr?limit=20&offset=20
 ```
+
 </details>
 
 <details>
@@ -46,7 +48,8 @@ This endpoint provides access to a paginated list of all TFRs in the system whic
 |offset|offset=20|The number of entries to skip before returning data|
 
 #### Sample URL
-```http request
+
+```
 https://nextlaunch.org/api/0.0.1/tfr/upcoming?limit=20&offset=20
 ```
 </details>
@@ -70,7 +73,8 @@ This endpoint provides access to a paginated list of all TFRs in the system whic
 |offset|offset=20|The number of entries to skip before returning data|
 
 #### Sample URL
-```http request
+
+```
 https://nextlaunch.org/api/0.0.1/tfr/active?limit=20&offset=20
 ```
 </details>
@@ -92,7 +96,8 @@ This endpoint provides access to a paginated list of all TFRs in the system whic
 |offset|offset=20|The number of entries to skip before returning data|
 
 #### Sample URL
-```http request
+
+```
 https://nextlaunch.org/api/0.0.1/tfr/previous?limit=20&offset=20
 ```
 </details>
@@ -112,10 +117,12 @@ This endpoint provides access to a single TFR
 |id|UUID(v4)/String|`797d0a62-3aab-460e-9881-f18f2bd1bc97` or `1_4530`|The ID of the entry to return|
 
 #### Sample URLs
-```http request
+
+```
 https://nextlaunch.org/api/0.0.1/tfr/797d0a62-3aab-460e-9881-f18f2bd1bc97
 ```
-```http request
+
+```
 https://nextlaunch.org/api/0.0.1/tfr/1_4530
 ```
 </details>

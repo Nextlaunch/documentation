@@ -24,7 +24,8 @@ The root path of this endpoint provides access to a paginated list of all NOTAMs
 |offset|offset=20|The number of entries to skip before returning data|
 
 #### Sample URL
-```http request
+
+```
 https://nextlaunch.org/api/0.0.1/notams?limit=20&offset=20
 ```
 </details>
@@ -46,9 +47,11 @@ This endpoint provides access to a paginated list of all NOTAMs in the system wh
 |offset|offset=20|The number of entries to skip before returning data|
 
 #### Sample URL
-```http request
+
+```
 https://nextlaunch.org/api/0.0.1/notams/upcoming?limit=20&offset=20
 ```
+
 </details>
 
 
@@ -70,7 +73,8 @@ This endpoint provides access to a paginated list of all NOTAMs in the system wh
 |offset|offset=20|The number of entries to skip before returning data|
 
 #### Sample URL
-```http request
+
+```
 https://nextlaunch.org/api/0.0.1/notams/active?limit=20&offset=20
 ```
 </details>
@@ -92,7 +96,8 @@ This endpoint provides access to a paginated list of all NOTAMs in the system wh
 |offset|offset=20|The number of entries to skip before returning data|
 
 #### Sample URL
-```http request
+
+```
 https://nextlaunch.org/api/0.0.1/notams/previous?limit=20&offset=20
 ```
 </details>
@@ -112,10 +117,12 @@ This endpoint provides access to a single NOTAM
 |id|UUID(v4)/String|`69d06e5a-7ee1-409d-a092-d017e65ff830` or `F1237_21`|The ID of the entry to return|
 
 #### Sample URLs
-```http request
+
+```
 https://nextlaunch.org/api/0.0.1/notams/69d06e5a-7ee1-409d-a092-d017e65ff830
 ```
-```http request
+
+```
 https://nextlaunch.org/api/0.0.1/notams/F1237_21
 ```
 </details>
