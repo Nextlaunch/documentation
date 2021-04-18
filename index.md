@@ -17,7 +17,9 @@ Want to try the API out without writing code?
 <summary>Temporary Flight Restriction (TFR)</summary>
 <br>
 <details open>
+
 <summary>Schema</summary>
+
 <br>
 
 ### Temporary Flight Restriction
