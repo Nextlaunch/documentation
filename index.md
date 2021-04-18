@@ -18,7 +18,7 @@ Want to try the API out without writing code?
 <br>
 <details open>
 
-<summary>Schema</summary>
+<summary><strong>Schema</strong></summary>
 
 <br>
 
@@ -67,7 +67,7 @@ Want to try the API out without writing code?
 </details>
 
 <details>
-<summary>Sample</summary>
+<summary><strong>Sample</strong></summary>
 <br>
 
 ```json
