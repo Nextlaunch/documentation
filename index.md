@@ -60,6 +60,7 @@ Want to try the API out without writing code?
 |message|String|This altitude pairing expressed in a human readable format|
 
 ### Altitude Information {#tfr-alt-info}
+
 |Field|Type|Description|
 |:---:|:---:|:---:|
 |height|Number|The value of the limit|
