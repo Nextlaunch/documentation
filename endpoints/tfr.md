@@ -10,6 +10,8 @@
 |[`/previous`](#previous)|Provides a paginated list for expired and withdrawn TFRs|
 |[`/:id`](#by-id)|Provides access to individual TFRs|
 
+<br>
+
 <details>
 <summary>### / {#root}
 </summary>
