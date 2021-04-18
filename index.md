@@ -55,15 +55,17 @@ Want to try the API out without writing code?
 
 |Field|Type|Description|
 |:---:|:---:|:---:|
-|upper.height|Number|The value of the upper limit|
-|upper.unit|String|The units that `upper.height` is measured in|
-|upper.inclusive|Boolean|Whether the value of `upper.height` is inclusive, or not|
-|upper.trusted|Boolean|Whether or not Nextlaunch can trust the data provided in this upper limit|
-|lower.height|Number|The value of the lower limit|
-|lower.unit|String|The units that `lower.height` is measured in|
-|lower.inclusive|Boolean|Whether the value of `lower.height` is inclusive, or not|
-|lower.trusted|Boolean|Whether or not Nextlaunch can trust the data provided in this lower limit|
-|Message|String|This altitude pairing expressed in a human readable format|
+|upper|[AltitudeInfo](#tfr-alt-info)|Information about the upper limit of this TFR|
+|lower|[AltitudeInfo](#tfr-alt-info)|Information about the lower limit of this TFR|
+|message|String|This altitude pairing expressed in a human readable format|
+
+### Altitude Information {#tfr-alt-info}
+|Field|Type|Description|
+|:---:|:---:|:---:|
+|height|Number|The value of the limit|
+|unit|String|The units that `height` is measured in|
+|inclusive|Boolean|Whether the value of `height` is inclusive, or not|
+|trusted|Boolean|Whether or not Nextlaunch can trust the data provided in this limit|
 
 </details>
 
