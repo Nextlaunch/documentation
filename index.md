@@ -160,6 +160,7 @@ Sample
 |effective|Boolean|If the TFR is considered "in effect" (current time is between start and end, and the TFR has not been withdrawn)|
 
 ### Coordinate {#notam-coordinate}
+
 |Field|Type|Description|
 |:---:|:---:|:---:|
 |lat.value|Number|The latitude component of the coordinate|
