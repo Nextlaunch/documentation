@@ -52,7 +52,7 @@ This endpoint provides access to a paginated list of all NOTAMs in the system wh
 #### Sample URL
 
 ```
-https://nextlaunch.org/api/0.0.1/notams/upcoming?limit=20&offset=20
+https://nextlaunch.org/api/0.0.1/notam/upcoming?limit=20&offset=20
 ```
 
 </details>
@@ -78,7 +78,7 @@ This endpoint provides access to a paginated list of all NOTAMs in the system wh
 #### Sample URL
 
 ```
-https://nextlaunch.org/api/0.0.1/notams/active?limit=20&offset=20
+https://nextlaunch.org/api/0.0.1/notam/active?limit=20&offset=20
 ```
 </details>
 
@@ -101,7 +101,7 @@ This endpoint provides access to a paginated list of all NOTAMs in the system wh
 #### Sample URL
 
 ```
-https://nextlaunch.org/api/0.0.1/notams/previous?limit=20&offset=20
+https://nextlaunch.org/api/0.0.1/notam/previous?limit=20&offset=20
 ```
 </details>
 
@@ -122,10 +122,10 @@ This endpoint provides access to a single NOTAM
 #### Sample URLs
 
 ```
-https://nextlaunch.org/api/0.0.1/notams/69d06e5a-7ee1-409d-a092-d017e65ff830
+https://nextlaunch.org/api/0.0.1/notam/69d06e5a-7ee1-409d-a092-d017e65ff830
 ```
 
 ```
-https://nextlaunch.org/api/0.0.1/notams/F1237_21
+https://nextlaunch.org/api/0.0.1/notam/F1237_21
 ```
 </details>
