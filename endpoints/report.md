@@ -125,16 +125,16 @@ This schema can be expressed as below:
 ```json
 {
     "tfr": {
-        "upcoming": [...Top Level Entity],
-        "active": [...Top Level Entity],
-        "expired": [...Top Level Entity],
-        "withdrawn": [...Top Level Entity]
+        "upcoming": [],
+        "active": [],
+        "expired": [],
+        "withdrawn": []
     },
     "notam": {
-        "upcoming": [...Top Level Entity],
-        "active": [...Top Level Entity],
-        "expired": [...Top Level Entity],
-        "withdrawn": [...Top Level Entity]
+        "upcoming": [],
+        "active": [],
+        "expired": [],
+        "withdrawn": []
     }
 }
 ```
