@@ -238,6 +238,8 @@ Sample
 </details>
 </details>
 
+
 ### Endpoints
 - [/notam](endpoints/notam) - various endpoints dealing with NOTAMs
 - [/tfr](endpoints/tfr) - various endpoints dealing with TFRs
+- [/report](endpoints/report) endpoint providing information on data changes over the previous 24 hours
